@@ -1,17 +1,17 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "name": "solid-ui-shasta",
   "description": "solid-ui-shasta",
   "license": "MIT",
-  "author": "{{me}}",
+  "author": "yusenjeng",
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/{{me}}/solid-ui-shasta.git"
+    "url": "git+https://github.com/yusenjeng/solid-ui-shasta"
   },
-  "homepage": "https://github.com/{{me}}/solid-ui-shasta#readme",
+  "homepage": "https://github.com/yusenjeng/solid-ui-shasta/blob/main/README.md",
   "bugs": {
-    "url": "https://github.com/{{me}}/solid-ui-shasta/issues"
+    "url": "https://github.com/yusenjeng/solid-ui-shasta/issues"
   },
   "files": [
     "dist"
