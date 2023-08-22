@@ -23,5 +23,11 @@ pnpm add solid-ui-shasta
 Use it:
 
 ```tsx
-import solid-ui-shasta from 'solid-ui-shasta'
+import {
+  Button, Text
+} from "solid-ui-shasta";
 ```
+
+A minimal [example project](https://github.com/yusenjeng/solid-ui-shasta-example-basic), FYI.
+
+Have fun.
