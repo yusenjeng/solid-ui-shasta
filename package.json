@@ -1,0 +1,83 @@
+{
+  "version": "0.0.1",
+  "name": "solid-ui-shasta",
+  "description": "solid-ui-shasta",
+  "license": "MIT",
+  "author": "{{me}}",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/{{me}}/solid-ui-shasta.git"
+  },
+  "homepage": "https://github.com/{{me}}/solid-ui-shasta#readme",
+  "bugs": {
+    "url": "https://github.com/{{me}}/solid-ui-shasta/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "private": false,
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "browser": {},
+  "exports": {
+    "solid": {
+      "development": "./dist/dev.jsx",
+      "import": "./dist/index.jsx"
+    },
+    "development": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/dev.js"
+      },
+      "require": "./dist/dev.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "require": "./dist/index.cjs"
+  },
+  "typesVersions": {},
+  "scripts": {
+    "dev": "vite serve dev --host",
+    "build": "tsup",
+    "test": "concurrently pnpm:test:*",
+    "test:client": "vitest",
+    "test:ssr": "pnpm run test:client --mode ssr",
+    "prepublishOnly": "pnpm build",
+    "format": "prettier --ignore-path .gitignore -w \"src/**/*.{js,ts,json,css,tsx,jsx}\" \"dev/**/*.{js,ts,json,css,tsx,jsx}\"",
+    "update-deps": "pnpm up -Li",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.7.5"
+  },
+  "devDependencies": {
+    "@solid-devtools/debugger": "^0.21.1",
+    "@solidjs/router": "^0.8.3",
+    "concurrently": "^7.6.0",
+    "esbuild": "^0.17.19",
+    "esbuild-plugin-solid": "^0.5.0",
+    "jsdom": "^21.1.2",
+    "prettier": "2.8.3",
+    "solid-devtools": "^0.26.1",
+    "solid-js": "^1.7.11",
+    "tsup": "^6.7.0",
+    "tsup-preset-solid": "^0.1.8",
+    "typescript": "^4.9.5",
+    "vite": "^4.4.9",
+    "vite-plugin-solid": "^2.7.0",
+    "vitest": "^0.28.5"
+  },
+  "keywords": [
+    "solid"
+  ],
+  "packageManager": "pnpm@7.22.0",
+  "dependencies": {
+    "solid-styled-components": "^0.28.5"
+  }
+}
