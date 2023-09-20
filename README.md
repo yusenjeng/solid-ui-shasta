@@ -22,10 +22,27 @@ pnpm add solid-ui-shasta
 
 Use it:
 
+// app.tsx
 ```tsx
 import {
-  Button, Text
+  Button, GlobalStyle
 } from "solid-ui-shasta";
+
+import { styled } from "solid-styled-components"; // optional
+
+const App = () => {
+  const onClick = () => {};
+  return (
+    <>
+      <GlobalStyle />
+      <Button onClick={onClick}>
+        Hello
+      </Button>
+    </>
+  );
+};
+
+export default App;
 ```
 
 A minimal [example project](https://github.com/yusenjeng/solid-ui-shasta-example-basic), FYI.
