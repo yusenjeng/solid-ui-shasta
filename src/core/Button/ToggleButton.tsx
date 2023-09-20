@@ -7,6 +7,7 @@ const BaseToggleButton = styled(IconButton)<{
   bgColor?: string
   isActive?: boolean
   noBorder?: boolean
+  disabled?: boolean
 }>`
   background-color: ${props => props.bgColor};
   border: ${props =>
@@ -17,7 +18,7 @@ const BaseToggleButton = styled(IconButton)<{
       : 'var(--toggle-button-border-width) solid var(--button-border-color)'};
 
   &:hover {
-    background-color: ${props => props.bgColor};
+    background-color: ${props => props.disabled ? '' : props.bgColor};
     border: ${props =>
       props.noBorder
         ? '0'
